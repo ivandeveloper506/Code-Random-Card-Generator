@@ -1,1 +1,93 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: green;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  font-size: 150px;
+  justify-content: center;
+  height: 500px;
+  width: 350px;
+  background: white;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+.card.spade::before {
+  content: "\2660";
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  color: black;
+  font-size: 120px;
+}
+
+.card.spade::after {
+  content: "\2660";
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  font-size: 120px;
+  color: black;
+  transform: rotate(180deg);
+}
+
+.card.club::before {
+  content: "\2663";
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  font-size: 120px;
+  color: black;
+}
+
+.card.club::after {
+  content: "\2663";
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  font-size: 120px;
+  color: black;
+  transform: rotate(180deg);
+}
+
+.card.heart::before {
+  content: "\2665";
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  font-size: 120px;
+  color: red;
+}
+
+.card.heart::after {
+  content: "\2665";
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  font-size: 120px;
+  color: red;
+  transform: rotate(180deg);
+}
+
+.card.diamond::before {
+  content: "\2666";
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  font-size: 120px;
+  color: red;
+}
+
+.card.diamond::after {
+  content: "\2666";
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  font-size: 120px;
+  color: red;
+}
